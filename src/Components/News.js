@@ -23,7 +23,7 @@ export class News extends Component {
         behavior: "smooth",
       });
 
-      let Url = `http://localhost:5000/api/news?page=${page}&pageSize=${this.state.pageSize}`;
+      let Url = `https://newsapp-backend-cstw.onrender.com/api/news?page=${page}&pageSize=${this.state.pageSize}`;
       let data = await fetch(Url);
       let parsedData = await data.json();
       console.log(parsedData);
