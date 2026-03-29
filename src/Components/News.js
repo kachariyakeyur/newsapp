@@ -26,7 +26,7 @@ export class News extends Component {
       let Url = `https://newsapp-backend-cstw.onrender.com/api/news?page=${page}&pageSize=${this.state.pageSize}`;
       let data = await fetch(Url);
       let parsedData = await data.json();
-      console.log(parsedData);
+    //   console.log(parsedData);
       this.setState({
         articles: Array.isArray(parsedData.articles) ? parsedData.articles : [],
         totalResults: parsedData.totalResults,
@@ -48,7 +48,7 @@ export class News extends Component {
   }
 
   handlePreviousClick = async () => {
-    console.log("Previous");
+    // console.log("Previous");
 
     if (this.state.page > 1) {
       this.fetchNews(this.state.page - 1);
@@ -56,7 +56,7 @@ export class News extends Component {
   };
 
   handleNextClick = async () => {
-    console.log("Next");
+    // console.log("Next");
 
     const totalPages = Math.max(
       1,
