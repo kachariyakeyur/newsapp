@@ -4,7 +4,7 @@ A React-based News Application that fetches the latest headlines using a custom 
 
 ## 🚀 Live Demo
 
-- **Frontend (Vercel):** https://newsapp-tau-tan.vercel.app/
+- **Frontend (Vercel):** https://keyurs-newsapp.vercel.app/
 - **Backend (Render):** https://newsapp-backend-cstw.onrender.com/
 
 ---
